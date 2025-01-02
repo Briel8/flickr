@@ -1,0 +1,11 @@
+{% extends 'flickr/base.html' %}
+
+{% block title %}Enter Id{% endblock %}
+
+{% block content %}
+    <form method="post" action="{% url 'flickr:index' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">search</button>
+    </form>
+{% endblock %}

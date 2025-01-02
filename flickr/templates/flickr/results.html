@@ -1,0 +1,10 @@
+{% extends 'flickr/base.html' %}
+
+{% block title %}Results{% endblock %}
+{% block content %}
+    {% for photo in photos %}
+      <img src="{{ photo }}" alt="photo thumbnail">
+    {% empty %}
+      No matched photos for the provided user id.
+    {% endfor %}
+{% endblock %}
