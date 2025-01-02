@@ -19,10 +19,3 @@ A Django application that fetches and displays photos from a user's Flickr feed 
 - Flickr API key and secret key
 
 ---
-
-## Installation
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/your-username/flickr-photo-viewer.git
-   cd flickr-photo-viewer
